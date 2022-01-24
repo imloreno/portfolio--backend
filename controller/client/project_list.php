@@ -72,6 +72,10 @@ switch ($url[1]) {
                [
                   "type" => "github",
                   "url" => "https://github.com/SoySanty/sistema_votacion_cosmon_front"
+               ],
+               [
+                  "type" => "prueba",
+                  "url" => "http://sistema-elecciones.atwebpages.com/"
                ]
             ]
          ]
