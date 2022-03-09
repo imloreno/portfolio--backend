@@ -42,10 +42,29 @@ if (isset($_GET['url'])) {
          case "projects":
             if (count($url) > 0) {
                require_once "controller/client/project_list.php";
-               http_response_code(200);
             } else {
                http_response_code(404);
             }
+            break;
+            //Achievements list
+         case "achievements":
+            if (count($url) > 0) {
+               require_once "controller/client/achievements_list.php";
+            } else {
+               http_response_code(404);
+            }
+            break;
+            //Portfolio list
+         case "portfolio":
+            if (count($url) > 0) {
+               require_once "controller/client/portfolio_list.php";
+            } else {
+               http_response_code(404);
+            }
+            break;
+
+         default:
+            http_response_code(404);
             break;
       }
    }
